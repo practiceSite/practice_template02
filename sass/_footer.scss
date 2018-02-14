@@ -1,0 +1,29 @@
+.Footer {
+  width: auto;
+  height: 100px;
+  background-color: $blue;
+  margin-top: 68px;
+  &__Contents {
+    position: relative;
+    top: 25px;
+  }
+  &__list {
+    text-align: center;
+  }
+  &__icon {
+    color: $white;
+    width: 24px;
+    height: 24px;
+    &-twitter {
+      margin-right: 31px;
+    }
+    // &-facebook {
+    // }
+  }
+}
+#Copyright {
+  font-size: 12px;
+  color: $white;
+  text-align: center;
+  margin-top: 25px;
+}

@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>aaa</title>
-  </head>
-  <body>
-<p>aaaa</p>
-<p>ccc</p>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Template</title>
+</head>
+<body>
+  <header>
+    <div class="Header">
+      <ul class="Header__Navigation">
+        <li class="Header__NavigationItem">Temple</li>
+        <li class="Header__NavigationItem"><a href="#" class="Header__NavigationItem--link">Service</a></li>
+        <li class="Header__NavigationItem"><a href="#" class="Header__NavigationItem--link">About</a></li>
+        <li class="Header__NavigationItem"><a href="#" class="Header__NavigationItem--link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="Hero">
+        <div class="Hero__Contents">
+          <h1 class="Hero__title">Sample</h1>
+          <p class="Hero__Subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="Button Hero__Button">Get SourceCode</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="Service">
+        <h2 class="Section__title Section__title--Service">Service</h2>
+        <div class="Service__list">
+          <div class="Service__item">
+            <div class="Service__icon"></div>
+            <h3 class="Service__title">Title</h3>
+            <p class="Service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="Service__item Service__item--center">
+            <div class="Service__icon"></div>
+            <h3 class="Service__title">Title</h3>
+            <p class="Service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="Service__item">
+            <div class="Service__icon"></div>
+            <h3 class="Service__title">Title</h3>
+            <p class="Service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="About">
+        <div class="About__left">
+          <div class="About__contents">
+            <h2 class="Section__title Section__title--About">About</h2>
+            <h3 class="About__title">Sample</h3>
+            <p class="About__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="About__right">
+          <img src="assets/about.jpg" alt="about" class="About__image" width="100%" height="680px">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="Contact">
+        <h2 class="Section__title Section__title--Contact">Contact</h2>
+        <div id="Form">
+          <form method="post">
+            <div class="Form__box">
+              <div class="Form__text">
+                <input type="text" name="name" placeholder="Name" class="Form__input Form__input--Name">
+                <input type="text" placeholder="E-mail" class="Form__input">
+              </div>
+              <div class="Form__content">
+                <textarea name="content" class="Form__textarea" placeholder="Content"></textarea>
+              </div>
+            </div>
+            <div class="Form__button">
+              <input type="submit" name="submit" value="Submit" class="Button Form__Buttosn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="Footer">
+      <div class="Footer__Contents">
+        <div class="Footer__list">
+          <a href="#" class="Footer__icon Footer__icon-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="Footer__icon Footer__icon-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
+        <p id="Copyright"><small>&copy;2017 Template</small></p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

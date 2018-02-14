@@ -1,0 +1,36 @@
+.Form {
+  &__box {
+    width: 500px;
+    margin: 0 auto;
+  }
+  &__text {
+    display: flex;
+    margin-top: 26px;
+  }
+  &__input {
+    width: 243px;
+    height: 43px;
+    margin-left: 13px;
+    border: $dark-gray 1px solid;
+    border-radius: 3px;
+    color: $light-gray;
+    padding: 10px;
+    box-sizing: border-box;
+    &--Name {
+      border-color: $blue;
+      margin-left: 0;
+    }
+  }
+  &__content {
+    margin-top: 19px;
+  }
+  &__textarea {
+    width: 500px;
+    height: 97px;
+    border: $dark-gray 1px solid;
+    border-radius: 3px;
+    color: $light-gray;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

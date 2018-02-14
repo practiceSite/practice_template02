@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*  HTML5 display-role reset for older browsers
+*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Futura;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.Header {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+.Header__Navigation {
+  display: flex;
+  align-items: center;
+  width: 73%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.Header__NavigationItem {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.Header__NavigationItem:first-child {
+  font-size: 26px;
+  margin-right: auto;
+}
+
+.Header__NavigationItem:nth-child(3) {
+  margin: 0 20px;
+}
+
+.Header__NavigationItem--link {
+  color: #ffffff;
+}
+
+.Hero {
+  background-image: url(../assets/bg.jpg);
+  width: 100%;
+  height: 580px;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Hero::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 580px;
+  content: ' ';
+}
+
+.Hero__Contents {
+  width: 436px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  transform: translateY(50%);
+}
+
+.Hero__title {
+  font-size: 80px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.Hero__Subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.Button {
+  width: 160px;
+  color: #ffffff;
+  background-color: #96DEDA;
+  border-radius: 5px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.Hero__Button {
+  font-size: 14px;
+  height: 40px;
+}
+
+.Form__Buttosn {
+  height: 43px;
+  font-size: 16px;
+  border: none;
+  margin-top: 48px;
+}
+
+.Section__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.Section__title--Service {
+  margin-top: 50px;
+}
+
+.Section__title--Contact {
+  margin-top: 58px;
+}
+
+.Service__list {
+  width: 73%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.Service__item {
+  width: 300px;
+  height: 276px;
+}
+
+.Service__item--center {
+  margin: 0 50px 0 50px;
+}
+
+.Service__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: #95989A 1px solid;
+  margin: 0 auto;
+}
+
+.Service__title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+.Service__text {
+  font-size: 14px;
+  text-align: center;
+  line-height: 19px;
+  overflow: scroll;
+  height: 183px;
+}
+
+.About {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-top: 84px;
+}
+
+.About__left {
+  width: 50%;
+  height: 680px;
+  background-color: #EEEEEE;
+}
+
+.About__contents {
+  height: 100%;
+  text-align: right;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.About__title {
+  font-size: 24px;
+}
+
+.About__description {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.About__right {
+  width: 50%;
+}
+
+.About__image {
+  object-fit: cover;
+}
+
+.Form__box {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.Form__text {
+  display: flex;
+  margin-top: 26px;
+}
+
+.Form__input {
+  width: 243px;
+  height: 43px;
+  margin-left: 13px;
+  border: #95989A 1px solid;
+  border-radius: 3px;
+  color: #AAAAAA;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Form__input--Name {
+  border-color: #96DEDA;
+  margin-left: 0;
+}
+
+.Form__content {
+  margin-top: 19px;
+}
+
+.Form__textarea {
+  width: 500px;
+  height: 97px;
+  border: #95989A 1px solid;
+  border-radius: 3px;
+  color: #AAAAAA;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Footer {
+  width: auto;
+  height: 100px;
+  background-color: #96DEDA;
+  margin-top: 68px;
+}
+
+.Footer__Contents {
+  position: relative;
+  top: 25px;
+}
+
+.Footer__list {
+  text-align: center;
+}
+
+.Footer__icon {
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.Footer__icon-twitter {
+  margin-right: 31px;
+}
+
+#Copyright {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25px;
+}

@@ -1,0 +1,12 @@
+.Section {
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    &--Service {
+      margin-top: 50px;
+    }
+    &--Contact {
+      margin-top: 58px;
+    }
+  }
+}
