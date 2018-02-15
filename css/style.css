@@ -66,18 +66,29 @@ input, textarea {
 }
 
 .Header {
-  width: 100%;
   position: absolute;
   top: 20px;
   z-index: 1;
+  align-items: center;
+  width: 100%;
+}
+
+.Header__text {
+  margin: 0 auto;
+  width: 73%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Header__title {
+  font-size: 26px;
+  margin-right: auto;
+  color: #ffffff;
 }
 
 .Header__Navigation {
   display: flex;
-  align-items: center;
-  width: 73%;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .Header__NavigationItem {
@@ -85,12 +96,7 @@ input, textarea {
   color: #ffffff;
 }
 
-.Header__NavigationItem:first-child {
-  font-size: 26px;
-  margin-right: auto;
-}
-
-.Header__NavigationItem:nth-child(3) {
+.Header__NavigationItem:nth-child(2) {
   margin: 0 20px;
 }
 
