@@ -5,12 +5,32 @@
     margin: 34px auto 0;
     display: flex;
     justify-content: center;
+    @include tb {
+      display: block;
+    }
+    @include sp {
+      display: block;
+    }
   }
   &__item {
     width: 300px;
     height: 276px;
+    @include tb {
+      width: auto;
+      height: auto;
+    }
+    @include sp {
+      width: auto;
+      height: auto;
+    }
     &--center {
       margin: 0 50px 0 50px;
+      @include tb {
+        margin: 50px 0 50px 0;
+      }
+      @include sp {
+        margin: 50px 0 50px 0;
+      }
     }
   }
   &__icon {
@@ -32,5 +52,11 @@
     line-height: 19px;
     overflow: scroll;
     height: 183px;
+    @include tb {
+      height: auto;
+    }
+    @include sp {
+      height: auto;
+    }
   }
 }

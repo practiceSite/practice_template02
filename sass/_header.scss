@@ -18,6 +18,12 @@
   }
   &__Navigation {
     display: flex;
+    @include tb {
+      display: none;
+    }
+    @include sp {
+      display: none;
+    }
     &Item {
       font-size: 14px;
       color: $white;

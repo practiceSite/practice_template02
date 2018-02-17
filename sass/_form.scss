@@ -2,6 +2,12 @@
   &__box {
     width: 500px;
     margin: 0 auto;
+    @include tb {
+      width: 400px;
+    }
+    @include sp {
+      width: 350px;
+    }
   }
   &__text {
     display: flex;
@@ -16,6 +22,12 @@
     color: $light-gray;
     padding: 10px;
     box-sizing: border-box;
+    @include tb {
+      width: 193px;
+    }
+    @include sp {
+      width: 168px;
+    }
     &--Name {
       border-color: $blue;
       margin-left: 0;
@@ -32,5 +44,11 @@
     color: $light-gray;
     padding: 10px;
     box-sizing: border-box;
+    @include tb {
+      width: 400px;
+    }
+    @include sp {
+      width: 350px;
+    }
   }
 }

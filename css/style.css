@@ -91,6 +91,18 @@ input, textarea {
   display: flex;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Header__Navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Header__Navigation {
+    display: none;
+  }
+}
+
 .Header__NavigationItem {
   font-size: 14px;
   color: #ffffff;
@@ -203,13 +215,51 @@ input, textarea {
   justify-content: center;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Service__list {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Service__list {
+    display: block;
+  }
+}
+
 .Service__item {
   width: 300px;
   height: 276px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Service__item {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Service__item {
+    width: auto;
+    height: auto;
+  }
+}
+
 .Service__item--center {
   margin: 0 50px 0 50px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Service__item--center {
+    margin: 50px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Service__item--center {
+    margin: 50px 0 50px 0;
+  }
 }
 
 .Service__icon {
@@ -235,6 +285,18 @@ input, textarea {
   height: 183px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Service__text {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Service__text {
+    height: auto;
+  }
+}
+
 .About {
   display: -webkit-flex;
   display: -ms-flex;
@@ -242,10 +304,38 @@ input, textarea {
   margin-top: 84px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .About {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About {
+    display: inline-block;
+  }
+}
+
 .About__left {
   width: 50%;
   height: 680px;
   background-color: #EEEEEE;
+}
+
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .About__left {
+    width: auto;
+    height: 680px;
+    background-color: #EEEEEE;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About__left {
+    width: auto;
+    height: 680px;
+    background-color: #EEEEEE;
+  }
 }
 
 .About__contents {
@@ -274,6 +364,18 @@ input, textarea {
   width: 50%;
 }
 
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .About__right {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About__right {
+    width: auto;
+  }
+}
+
 .About__image {
   object-fit: cover;
 }
@@ -281,6 +383,18 @@ input, textarea {
 .Form__box {
   width: 500px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Form__box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Form__box {
+    width: 350px;
+  }
 }
 
 .Form__text {
@@ -297,6 +411,18 @@ input, textarea {
   color: #AAAAAA;
   padding: 10px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Form__input {
+    width: 193px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Form__input {
+    width: 168px;
+  }
 }
 
 .Form__input--Name {
@@ -316,6 +442,18 @@ input, textarea {
   color: #AAAAAA;
   padding: 10px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 769px) and (min-width: 481px) {
+  .Form__textarea {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Form__textarea {
+    width: 350px;
+  }
 }
 
 .Footer {
