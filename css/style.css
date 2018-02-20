@@ -69,7 +69,9 @@ input, textarea {
   position: absolute;
   top: 20px;
   z-index: 1;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -78,6 +80,8 @@ input, textarea {
   width: 73%;
   max-width: 1000px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -88,6 +92,8 @@ input, textarea {
 }
 
 .Header__Navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -134,10 +140,16 @@ input, textarea {
 
 .Hero__Contents {
   width: 436px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .Hero__title {
@@ -160,9 +172,15 @@ input, textarea {
   background-color: #96DEDA;
   border-radius: 5px;
   margin: 0 auto;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Hero__Button {
@@ -189,14 +207,16 @@ input, textarea {
   height: 2px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: -10px;
   background: #96DEDA;
 }
 
 .Section__title--About::after {
   left: auto;
-  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 .Section__title--Service {
@@ -211,8 +231,12 @@ input, textarea {
   width: 73%;
   max-width: 1000px;
   margin: 34px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 769px) and (min-width: 481px) {
@@ -236,6 +260,7 @@ input, textarea {
   .Service__item {
     width: auto;
     height: auto;
+    margin-top: 50px;
   }
 }
 
@@ -243,6 +268,7 @@ input, textarea {
   .Service__item {
     width: auto;
     height: auto;
+    margin-top: 50px;
   }
 }
 
@@ -252,13 +278,13 @@ input, textarea {
 
 @media screen and (max-width: 769px) and (min-width: 481px) {
   .Service__item--center {
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
   }
 }
 
 @media screen and (max-width: 480px) {
   .Service__item--center {
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
   }
 }
 
@@ -298,8 +324,9 @@ input, textarea {
 }
 
 .About {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 84px;
 }
@@ -342,12 +369,22 @@ input, textarea {
   height: 100%;
   text-align: right;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 50px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .About__title {
@@ -377,7 +414,8 @@ input, textarea {
 }
 
 .About__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Form__box {
@@ -398,6 +436,8 @@ input, textarea {
 }
 
 .Form__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 32px;
 }
@@ -410,7 +450,8 @@ input, textarea {
   border-radius: 3px;
   color: #AAAAAA;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media screen and (max-width: 769px) and (min-width: 481px) {
@@ -441,7 +482,8 @@ input, textarea {
   border-radius: 3px;
   color: #AAAAAA;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media screen and (max-width: 769px) and (min-width: 481px) {

@@ -22,7 +22,7 @@ gulp.task('sass-watch', ['sass'], function(){
 // gulp-combine-media-queries
 
 gulp.task('cmq', function () {
-  gulp.src('css/**/*.css') // 見て欲しいファイルを指定
+  gulp.src('css') // 見て欲しいファイルを指定
 
     .pipe(cmq({
       log: true
