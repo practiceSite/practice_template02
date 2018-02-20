@@ -18,20 +18,18 @@
     @include tb {
       width: auto;
       height: auto;
-      margin-top: 50px;
     }
     @include sp {
       width: auto;
       height: auto;
-      margin-top: 50px;
     }
     &--center {
       margin: 0 50px 0 50px;
       @include tb {
-        margin: 50px 0 0 0;
+        margin: 50px 0 50px 0;
       }
       @include sp {
-        margin: 50px 0 0 0;
+        margin: 50px 0 50px 0;
       }
     }
   }

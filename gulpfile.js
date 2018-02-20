@@ -1,13 +1,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var autoprefixer = require("gulp-autoprefixer"); // ベンダープレフィックス
-var cmq = require('gulp-combine-media-queries');
 
 // SassとCssの保存先を指定
 gulp.task('sass', function(){
   gulp.src('./sass/**/*.scss')
     .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer()) // ここがautoprefixer
     .pipe(gulp.dest('./css/'));
 });
 
@@ -18,18 +15,5 @@ gulp.task('sass-watch', ['sass'], function(){
   });
 });
 
-
-// gulp-combine-media-queries
-
-gulp.task('cmq', function () {
-  gulp.src('css/**/*.css') // 見て欲しいファイルを指定
-
-    .pipe(cmq({
-      log: true
-    })) // その名の通りlogを残すか否か
-
-    .pipe(gulp.dest('./css')); // コンパイルしてほしい場所を指定
-});
-
 // タスク"task-watch"がgulpと入力しただけでdefaultで実行されるようになる
-gulp.task('default', ['sass-watch', 'cmq']);
+gulp.task('default', ['sass-watch']);
