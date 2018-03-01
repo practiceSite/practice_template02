@@ -1,7 +1,7 @@
 ;(() => {
   var Menu__button = document.getElementById('Menu__button');
   var Menu__list = document.getElementById('Menu__list');
-  var Header__NavigationItem = document.getElementsByClassName('Header__NavigationItem');
+  var Header__NavigationItem = document.getElementsByClassName('Header__NavigationItem--link');
   var isActive = false
 
   Menu__button.addEventListener('click',function (e) {

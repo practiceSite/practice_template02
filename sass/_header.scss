@@ -96,9 +96,15 @@
     display: flex;
     @include tb-sp {
       display: none;
+      animation: active-Navigation .75s forwards;
+      @keyframes active-Navigation {
+        100% {
+          opacity: 1;
+        }
+      }
     }
     &.active {
-      @include tb {
+      @include tb-sp {
         display: block;
         position: absolute;
         top: 100%;
@@ -116,10 +122,11 @@
       @include tb {
         font-size: 18px;
       }
-      @include sp {}
+      @include sp {
+        font-size: 20px;
+      }
       &:nth-child(1) {
-        @include tb {
-          margin-top: 30px;
+        @include tb-sp {
           animation: active-NavigationItem .75s ease 0.75s forwards;
           @keyframes active-NavigationItem {
             100% {
@@ -128,15 +135,17 @@
             }
           }
         }
-        @include sp {}
+        @include tb {
+          margin-top: 40px;
+        }
+        @include sp {
+          margin-top: 20px;
+        }
       }
       &:nth-child(2) {
         margin: 0 20px;
         @include tb-sp {
           margin: 0;
-        }
-        @include tb {
-          margin-top: 10px;
           animation: active-NavigationItem .75s ease 0.5s forwards;
           @keyframes active-NavigationItem {
             100% {
@@ -145,12 +154,15 @@
             }
           }
         }
-        @include sp {}
+        @include tb {
+          margin-top: 30px;
+        }
+        @include sp {
+          margin-top: 15px;
+        }
       }
       &:nth-child(3) {
-        @include tb-sp {}
-        @include tb {
-          margin-top: 10px;
+        @include tb-sp {
           animation: active-NavigationItem .75s ease 0.25s forwards;
           @keyframes active-NavigationItem {
             100% {
@@ -159,7 +171,12 @@
             }
           }
         }
-        @include sp {}
+        @include tb {
+          margin-top: 30px;
+        }
+        @include sp {
+          margin-top: 15px;
+        }
       }
       &--link {
         color: $white;
