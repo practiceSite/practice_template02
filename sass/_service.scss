@@ -25,7 +25,7 @@
       height: auto;
       margin-top: 50px;
     }
-    &--center {
+    &:nth-child(2) {
       margin: 0 50px 0 50px;
       @include tb {
         margin: 50px 0 0 0;

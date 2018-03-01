@@ -8,3 +8,8 @@
     @content;
   }
 }
+@mixin tb-sp {
+  @media screen and (max-width: $breakpoint-tb) {
+    @content;
+  }
+}
