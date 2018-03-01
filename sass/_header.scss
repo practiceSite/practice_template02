@@ -109,6 +109,10 @@
     &Item {
       font-size: 14px;
       color: $white;
+      @include tb-sp {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
       @include tb {
         font-size: 18px;
       }
@@ -116,6 +120,13 @@
       &:nth-child(1) {
         @include tb {
           margin-top: 30px;
+          animation: active-NavigationItem .75s ease 0.75s forwards;
+          @keyframes active-NavigationItem {
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         }
         @include sp {}
       }
@@ -126,12 +137,27 @@
         }
         @include tb {
           margin-top: 10px;
+          animation: active-NavigationItem .75s ease 0.5s forwards;
+          @keyframes active-NavigationItem {
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         }
         @include sp {}
       }
       &:nth-child(3) {
+        @include tb-sp {}
         @include tb {
           margin-top: 10px;
+          animation: active-NavigationItem .75s ease 0.25s forwards;
+          @keyframes active-NavigationItem {
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         }
         @include sp {}
       }

@@ -291,6 +291,14 @@ input, textarea {
   color: #ffffff;
 }
 
+@media screen and (max-width: 769px) {
+  .Header__NavigationItem {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 481px) {
   .Header__NavigationItem {
     font-size: 18px;
@@ -300,6 +308,22 @@ input, textarea {
 @media screen and (max-width: 769px) and (min-width: 481px) {
   .Header__NavigationItem:nth-child(1) {
     margin-top: 30px;
+    -webkit-animation: active-NavigationItem .75s ease 0.75s forwards;
+            animation: active-NavigationItem .75s ease 0.75s forwards;
+  }
+  @-webkit-keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 }
 
@@ -316,12 +340,44 @@ input, textarea {
 @media screen and (max-width: 769px) and (min-width: 481px) {
   .Header__NavigationItem:nth-child(2) {
     margin-top: 10px;
+    -webkit-animation: active-NavigationItem .75s ease 0.5s forwards;
+            animation: active-NavigationItem .75s ease 0.5s forwards;
+  }
+  @-webkit-keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 }
 
 @media screen and (max-width: 769px) and (min-width: 481px) {
   .Header__NavigationItem:nth-child(3) {
     margin-top: 10px;
+    -webkit-animation: active-NavigationItem .75s ease 0.25s forwards;
+            animation: active-NavigationItem .75s ease 0.25s forwards;
+  }
+  @-webkit-keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes active-NavigationItem {
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 }
 
