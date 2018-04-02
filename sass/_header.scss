@@ -21,9 +21,6 @@
     display: none;
     @include tb-sp {
       content: "";
-      // width: 30px;
-      // height: auto;
-      // display: block;
       display: inline-block;
       transition: all .4s;
       box-sizing: border-box;
@@ -31,11 +28,6 @@
       width: 50px;
       height: $button-height;
       span {
-        // display: block;
-        // width: 30px;
-        // height: 1px;
-        // background-color: $white;
-        // position: absolute;
         position: absolute;
         left: 0;
         width: 100%;
@@ -94,30 +86,43 @@
   }
   &__Navigation {
     display: flex;
-    @include tb-sp {
-      display: none;
-      animation: active-Navigation .75s forwards;
-      @keyframes active-Navigation {
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-    &.active {
       @include tb-sp {
-        display: block;
         position: absolute;
         top: 100%;
-        width: 73%;
+        right: 13.5%;
+        width: 0;
+        overflow: hidden;
+        display: block;
+        transition-duration: 1.5s;
+        transition-timing-function: cubic-bezier(1, 0, 1, 0);
         text-align: right;
+        &>* {
+          opacity: 1;
+          animation: NavigationItem .75s ease forwards;
+          @keyframes NavigationItem {
+            0% {opacity: 1;transform: translateY(0);}
+            100% {opacity: 0;transform: translateY(-100%);}
+          }
+        }
+      }
+    &.active {
+      @include tb-sp {
+        transition-timing-function: cubic-bezier(0, 1, 0, 1);
+        width: 73%;
+        &>* {
+          opacity: 0;
+          animation: active-NavigationItem .75s ease forwards;
+          @keyframes active-NavigationItem {
+            0% {opacity: 0;transform: translateY(-100%);}
+            100% {opacity: 1;transform: translateY(0);}
+          }
+        }
       }
     }
     &Item {
       font-size: 14px;
       color: $white;
       @include tb-sp {
-        opacity: 0;
-        transform: translateY(-100%);
       }
       @include tb {
         font-size: 18px;
@@ -127,13 +132,7 @@
       }
       &:nth-child(1) {
         @include tb-sp {
-          animation: active-NavigationItem .75s ease 0.75s forwards;
-          @keyframes active-NavigationItem {
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
+          animation-delay: 0.25s;
         }
         @include tb {
           margin-top: 40px;
@@ -146,13 +145,7 @@
         margin: 0 20px;
         @include tb-sp {
           margin: 0;
-          animation: active-NavigationItem .75s ease 0.5s forwards;
-          @keyframes active-NavigationItem {
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
+          animation-delay: 0.5s;
         }
         @include tb {
           margin-top: 30px;
@@ -163,13 +156,7 @@
       }
       &:nth-child(3) {
         @include tb-sp {
-          animation: active-NavigationItem .75s ease 0.25s forwards;
-          @keyframes active-NavigationItem {
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
+          animation-delay: 0.75s;
         }
         @include tb {
           margin-top: 30px;
